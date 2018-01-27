@@ -23,353 +23,7 @@
     <script src="http://res.shsunedu.com/special/xfs/yjxfssem/js/video.min.js"></script>
 </head>
 <body>
-<script>
-
-    function closes(i) {
-        document.getElementById(i).style.display = "none";
-    }
-
-    function sub(i, biaoqian) {
-        //手机
-        var mobile = /^(13+\d{9})|(14+\d{9})|(15+\d{9})|(16+\d{9})|(18+\d{9})|(19+\d{9})$/;
-
-        var isIDCard = /^(\d{15}$|^\d{18}$|^\d{17}(\d|X|x))$/;
-
-        if (i == 1) {
-
-            if ($("#UserPhone1").val() == "") {
-                alert("手机号不可为空！");
-            }
-            else if (!mobile.test($("#UserPhone1").val())) {
-                alert("请务必正确填写您的手机号！")
-            }
-            else if ($("#UserName1").val() == "") {
-                alert("姓名不可为空！");
-            }
-
-            else {
-
-                $.post("http://service.shsunedu.com/jzs/Jzsserver.ashx", {
-                            UserName: $("#UserName1").val(),
-                            UserPhone: $("#UserPhone1").val(),
-                            FeedbackText: ".",
-                            page: "PC表单",
-                            Url: window.location.href,
-                            biaoqian: biaoqian
-                        },
-                        function (data) {
-
-                        });
-
-                $("#UserName1").val("");
-                $("#UserPhone1").val("");
-                alert("√提交成功！")
-
-            }
-
-        }
-
-        if (i == 2) {
-
-            if ($("#UserPhone2").val() == "") {
-                alert("手机号不可为空！");
-            }
-            else if (!mobile.test($("#UserPhone2").val())) {
-                alert("请务必正确填写您的手机号！")
-            }
-            else if ($("#UserName2").val() == "") {
-                alert("姓名不可为空！");
-            }
-
-            else {
-
-                $.post("http://service.shsunedu.com/jzs/Jzsserver.ashx", {
-                            UserName: $("#UserName2").val(),
-                            UserPhone: $("#UserPhone2").val(),
-                            FeedbackText: ".",
-                            page: "PC表单",
-                            Url: window.location.href,
-                            biaoqian: biaoqian
-                        },
-                        function (data) {
-
-                        });
-
-                $("#UserName2").val("");
-                $("#UserPhone2").val("");
-                alert("√提交成功！")
-
-            }
-
-        }
-
-        if (i == 3) {
-
-            if ($("#UserPhone3").val() == "") {
-                alert("手机号不可为空！");
-            }
-            else if (!mobile.test($("#UserPhone3").val())) {
-                alert("请务必正确填写您的手机号！")
-            }
-            else if ($("#UserName3").val() == "") {
-                alert("姓名不可为空！");
-            }
-
-            else {
-
-                $.post("http://service.shsunedu.com/jzs/Jzsserver.ashx", {
-                            UserName: $("#UserName3").val(),
-                            UserPhone: $("#UserPhone3").val(),
-                            FeedbackText: ".",
-                            page: "PC表单",
-                            Url: window.location.href,
-                            biaoqian: biaoqian
-                        },
-                        function (data) {
-
-                        });
-
-                $("#UserName3").val("");
-                $("#UserPhone3").val("");
-                alert("√提交成功！")
-
-            }
-
-        }
-
-        if (i == 4) {
-
-            if ($("#UserPhone4").val() == "") {
-                alert("手机号不可为空！");
-            }
-            else if (!mobile.test($("#UserPhone4").val())) {
-                alert("请务必正确填写您的手机号！")
-            }
-            else if ($("#UserName4").val() == "") {
-                alert("姓名不可为空！");
-            }
-
-            else {
-
-                $.post("http://service.shsunedu.com/jzs/Jzsserver.ashx", {
-                            UserName: $("#UserName4").val(),
-                            UserPhone: $("#UserPhone4").val(),
-                            FeedbackText: ".",
-                            page: "PC表单",
-                            Url: window.location.href,
-                            biaoqian: biaoqian
-                        },
-                        function (data) {
-
-                        });
-
-                $("#UserName4").val("");
-                $("#UserPhone4").val("");
-                alert("√提交成功！")
-
-            }
-
-        }
-
-
-        if (i == 5) {
-
-            if ($("#UserPhone5").val() == "") {
-                alert("手机号不可为空！");
-            }
-            else if (!mobile.test($("#UserPhone5").val())) {
-                alert("请务必正确填写您的手机号！")
-            }
-            else if ($("#UserName5").val() == "") {
-                alert("姓名不可为空！");
-            }
-
-            else {
-
-                $.post("http://service.shsunedu.com/jzs/Jzsserver.ashx", {
-                            UserName: $("#UserName5").val(),
-                            UserPhone: $("#UserPhone5").val(),
-                            FeedbackText: ".",
-                            page: "PC表单",
-                            Url: window.location.href,
-                            biaoqian: biaoqian
-                        },
-                        function (data) {
-
-                        });
-
-                $("#UserName5").val("");
-                $("#UserPhone5").val("");
-                alert("√提交成功！")
-
-            }
-
-        }
-
-        if (i == 6) {
-
-            if ($("#UserPhone6").val() == "") {
-                alert("手机号不可为空！");
-            }
-            else if (!mobile.test($("#UserPhone6").val())) {
-                alert("请务必正确填写您的手机号！")
-            }
-            else if ($("#UserName6").val() == "") {
-                alert("姓名不可为空！");
-            }
-
-            else {
-
-                $.post("http://service.shsunedu.com/jzs/Jzsserver.ashx", {
-                            UserName: $("#UserName6").val(),
-                            UserPhone: $("#UserPhone6").val(),
-                            FeedbackText: ".",
-                            page: "PC表单",
-                            Url: window.location.href,
-                            biaoqian: biaoqian
-                        },
-                        function (data) {
-
-                        });
-
-                $("#UserName6").val("");
-                $("#UserPhone6").val("");
-                alert("√提交成功！")
-
-            }
-
-        }
-        if (i == 7) {
-
-            if ($("#UserPhone7").val() == "") {
-                alert("手机号不可为空！");
-            }
-            else if (!mobile.test($("#UserPhone7").val())) {
-                alert("请务必正确填写您的手机号！")
-            }
-            else if ($("#UserName7").val() == "") {
-                alert("姓名不可为空！");
-            }
-
-            else {
-
-                $.post("http://service.shsunedu.com/jzs/Jzsserver.ashx", {
-                            UserName: $("#UserName7").val(),
-                            UserPhone: $("#UserPhone7").val(),
-                            FeedbackText: ".",
-                            page: "PC表单",
-                            Url: window.location.href,
-                            biaoqian: biaoqian
-                        },
-                        function (data) {
-
-                        });
-
-                $("#UserName7").val("");
-                $("#UserPhone7").val("");
-                alert("√提交成功！")
-
-            }
-
-        }
-        if (i == 8) {
-
-            if ($("#UserPhone8").val() == "") {
-                alert("手机号不可为空！");
-            }
-            else if (!mobile.test($("#UserPhone8").val())) {
-                alert("请务必正确填写您的手机号！")
-            }
-            else if ($("#UserName8").val() == "") {
-                alert("姓名不可为空！");
-            }
-
-            else {
-
-                $.post("http://service.shsunedu.com/jzs/Jzsserver.ashx", {
-                            UserName: $("#UserName8").val(),
-                            UserPhone: $("#UserPhone8").val(),
-                            FeedbackText: ".",
-                            page: "PC表单",
-                            Url: window.location.href,
-                            biaoqian: biaoqian
-                        },
-                        function (data) {
-
-                        });
-
-                $("#UserName8").val("");
-                $("#UserPhone8").val("");
-                alert("√提交成功！")
-
-            }
-
-        }
-        if (i == 9) {
-
-            if ($("#UserPhone9").val() == "") {
-                alert("手机号不可为空！");
-            }
-            else if (!mobile.test($("#UserPhone9").val())) {
-                alert("请务必正确填写您的手机号！")
-            }
-            else if ($("#UserName9").val() == "") {
-                alert("姓名不可为空！");
-            }
-
-            else {
-
-                $.post("http://service.shsunedu.com/jzs/Jzsserver.ashx", {
-                            UserName: $("#UserName9").val(),
-                            UserPhone: $("#UserPhone9").val(),
-                            FeedbackText: ".",
-                            page: "PC表单",
-                            Url: window.location.href,
-                            biaoqian: biaoqian
-                        },
-                        function (data) {
-
-                        });
-
-                $("#UserName9").val("");
-                $("#UserPhone9").val("");
-                alert("√提交成功！")
-            }
-        }
-        if (i == 10) {
-
-            if ($("#UserPhone10").val() == "") {
-                alert("手机号不可为空！");
-            }
-            else if (!mobile.test($("#UserPhone10").val())) {
-                alert("请务必正确填写您的手机号！")
-            }
-            else if ($("#UserName10").val() == "") {
-                alert("姓名不可为空！");
-            }
-
-            else {
-
-                $.post("http://service.shsunedu.com/jzs/Jzsserver.ashx", {
-                            UserName: $("#UserName10").val(),
-                            UserPhone: $("#UserPhone10").val(),
-                            FeedbackText: ".",
-                            page: "PC表单",
-                            Url: window.location.href,
-                            biaoqian: biaoqian
-                        },
-                        function (data) {
-
-                        });
-
-                $("#UserName10").val("");
-                $("#UserPhone10").val("");
-                alert("√提交成功！")
-            }
-        }
-    }
-</script>
-
+<script src="/js/check.js"></script>
 
 <!--报考条件审核窗口 begin-->
 <div id="wrap" style="display: none;">
@@ -468,19 +122,7 @@
         </ul>
     </div>
 </div>
-<script type="text/javascript">
-    $(function () {
-        $(".student ul li span").click(function () {
-            $(this).parents().siblings().find(".xinxi").hide();
-            $(this).siblings(".xinxi").show();
-        });
-        $(function () {
-            setTimeout(function () {
-                $("#wrap").fadeIn("slow")
-            }, 3000);
-        });
-    })
-</script>
+<script type="text/javascript" src="/js/xinxi.js"></script>
 <!--报考条件审核窗口 end-->
 
 <!--左侧悬浮部分-->
@@ -504,17 +146,17 @@
 
 <!--logo部分-->
 <div class="module1" id="top">
-    <!--<div class="module1-c">-->
-        <!--<a href="http://www.shsunedu.com/" class="fl"><img src="http://res.shsunedu.com/special/xfs/yjxfssem/images/logo1.png" alt=""></a>-->
+    <div class="module1-c">
+        <a href="http://www.y58kg.cn/" class="fl"><img src="/image/h2til.jpg" alt=""></a>
         <!--<span>免费热线：400 1188 164</span>-->
-    <!--</div>-->
+    </div>
 </div>
 <!--h1标题部分-->
 <div class="module2">
     <div class="module2-c">
-        <!--<h1>-->
-            <!--<img src="http://res.shsunedu.com/special/xfs/yjxfssem/images/h1til.png" alt="">-->
-        <!--</h1>-->
+        <h1>
+            <img src="/image/h1til.jpg" alt="">
+        </h1>
  <div class="nav">
       <ul class="ul-nav">
           <li class="lastli"><a onclick="openChats();return false;">报名方式</a></li>
@@ -986,18 +628,8 @@
     </video>
 </div>
 
-<script type="text/javascript">
-    /*初始化视频*/
-    var myPlayer = videojs('my-video');
-    var myPlayer2 = videojs('my-video2');
-    var myPlayer3 = videojs('my-video3');
-</script>
-<div class="black-video-bg"  onclick="hide()">
-
-
-</div>
-
-
+<script type="text/javascript" src="/js/video.js"></script>
+<div class="black-video-bg"  onclick="hide()"></div>
 
 <div class="box10">
     <div class="container">
@@ -2091,28 +1723,8 @@
 
 
 <input type="hidden" id="phone" value="0">
-<script type="text/javascript">
-        function browserRedirect() {
-            var sUserAgent = navigator.userAgent.toLowerCase();
-            var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
-            var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
-            var bIsMidp = sUserAgent.match(/midp/i) == "midp";
-            var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
-            var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
-            var bIsAndroid = sUserAgent.match(/android/i) == "android";
-            var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
-            var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
-            if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
-               $('html').css({'width':'1380px'});
-               $('#phone').val("1");
-               //window.location.href = "http://www.shsunedu.com";
-            } else {
-                scroll();
-            }
-        }
+<script type="text/javascript" src="/js/redirect.js"></script>
 
-        browserRedirect();
-</script>
 <!--<script src="/js/OnLine.js"></script>-->
 <!--小能代码 -->
 <!--- 百度统计 begin -->
@@ -2134,21 +1746,8 @@
 </div>
 
 <!-- growingio -->
-<script type='text/javascript'>
-    var _vds = _vds || [];
-    window._vds = _vds;
-    (function () {
-        _vds.push(['setAccountId', 'b4eb2eb5b05b16e3']);
-        (function () {
-            var vds = document.createElement('script');
-            vds.type = 'text/javascript';
-            vds.async = true;
-            vds.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'assets.growingio.com/vds.js';
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(vds, s);
-        })();
-    })();
-</script>
+<script type='text/javascript' src="/js/growingio.js"></script>
 
+<script type="text/javascript" charset="utf-8" src="http://lead.soperson.com/20003288/10092365.js"></script>
 </body>
 </html>
